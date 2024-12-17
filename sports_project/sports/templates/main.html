@@ -1,0 +1,16 @@
+    
+{% extends 'base.html' %}
+
+{% block title %}Main Page{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Sports Departments</h2>
+    <ul>
+        <li><a href="{% url 'kabbadi' %}">Kabbadi</a></li>
+        <li><a href="{% url 'cricket' %}">Cricket</a></li>
+        <li><a href="{% url 'basketball' %}">Basketball</a></li>
+        <li><a href="{% url 'volleyball' %}">Volleyball</a></li>
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Kabaddi Department{% endblock %}
+
+{% block content %}
+<div class="sports-container kabaddi-container">
+    <div class="text-container">
+        <h2>Welcome to the Kabaddi Department</h2>
+        <div class="form-container">
+            <h2>Submit Your Details</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+    
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <a href="{% url 'main' %}">Back to Main Page</a>
+    </div>
+</div>
+{% endblock %}
